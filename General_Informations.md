@@ -77,4 +77,4 @@ Before start working on the DNN, the data have been scaled: have been tried all 
 • (0, 1) for perfect signal and (1, 0) for perfect background events.
 
 ## Evaluation of the classification
-Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" for more indormations).
+Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" for more indormations or see its definition in the code).
