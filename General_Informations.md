@@ -57,7 +57,7 @@ Distributions of some of the angular variables are uniform (this is a problem, b
 They have different distributions for Signal and Background. Finally drop all phi variables: PRI_tau_phi, PRI_lep_phi, PRI_jet_leading_phi, PRI_jet_subleading_phi.
 
 ## Scaling of the Data
-Before start working on the DNN, the data have been scaled: have been tried all basic scalers, the best working was: Standard Scaling.
+Before start working on the DNN, the input data have been scaled with a Standard Scaling.
 
 ## Neural Network Structure
 • Have been used 5 and 6 hidden layers.
