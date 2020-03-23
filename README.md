@@ -1,6 +1,6 @@
 # USEFUL INFORMATIONS
  
-List of the documents in the repository (except this):
+## List of the documents in the repository (except this):
 
 - "General_Informations.md": contains general informations about the program written with Python 3.
 
@@ -9,7 +9,7 @@ about the AMS score and others.
 
 - "Program.ipynb": it's the main program written with Python 3.
 
-Important information:
+## Important information:
 
 This program was born as a collaboration between me and another collegue from Germany. We started working on this project
 without using the Control Version correctly. So at the end I put things in order and added all the versions (from the 
