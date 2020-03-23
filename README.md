@@ -1,4 +1,4 @@
-# USEFUL INFORMATIONS
+# Useful Informations
  
 ## List of the documents in the repository (except this)
 
