@@ -6,11 +6,11 @@ This classification has been performed on the free dataset from the Higgs Boson 
 ## Informations on the dataset
 Dataset is divided into some subsets:
 
-• Training Set: KaggleSet = t (used), 250.000 events.
+• Training Set: KaggleSet = t (used for the training set), 250.000 events.
 
-• Validation Set: KaggleSet = b (used), 100.000 events.
+• Validation Set: KaggleSet = b (used for the validation set), 100.000 events.
 
-• Test Set: KaggleSet = v (not yet used), 450.000 events.
+• Test Set: KaggleSet = v (used for the test set), 450.000 events.
 
 • Unused: KaggleSet = u (not yet used), 18.000 events.
 
@@ -41,7 +41,8 @@ To drop features that are meaningless for the new subsets.
 
 • Keep all the variables for the ≥ 2 jets Set.
 
-Finally train a Deep Neural Network for each subset.
+First, perform a classification on the whole dataset (without considering subsets) using the Gradient Boosted Decision Trees (BDT)
+Than, train 3 Deep Neural Networks, one for each subset considering the number of jets.
 
 ## Some Feature Work
 Distributions of some of the angular variables are uniform (this is a problem, because I coudn't use them for the discrimination between signal and background). So the idea is to build new features according to relative angles:
@@ -57,9 +58,14 @@ Distributions of some of the angular variables are uniform (this is a problem, b
 They have different distributions for Signal and Background. Finally drop all phi variables: PRI_tau_phi, PRI_lep_phi, PRI_jet_leading_phi, PRI_jet_subleading_phi.
 
 ## Scaling of the Data
-Before start working on the DNN, the input data have been scaled with a Standard Scaling.
+Before start working on the DNN and the BDT, before each procedure, the input data have been scaled with a Standard Scaling.
+
+## BDT Model
+Has been used the class `HistGradientBoostingClassifier` from the library `sklearn`. This BDT model has been used to train the whole data set. This model runs very fast and accurate in respect to the DNN one.
 
 ## Neural Network Structure
+Have been used 3 DNNs, one for each subset according to the number of jets. Has been used the library `keras`.
+
 • Have been used 5 and 6 hidden layers.
 
 • Relu and elu activation functions.
@@ -77,4 +83,5 @@ Before start working on the DNN, the input data have been scaled with a Standard
 • (0, 1) for perfect signal and (1, 0) for perfect background events.
 
 ## Evaluation of the classification
-Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" for more indormations or see its definition in the code).
+The combination of the models has been performed using the Logistic Regression on both outpus of DNN and BDT. The class used is `LogisticRegression` from the library `sklearn`.
+Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" for more indormations or see its definition in the code). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
