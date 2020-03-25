@@ -41,7 +41,7 @@ To drop features that are meaningless for the new subsets.
 
 • Keep all the variables for the ≥ 2 jets Set.
 
-First, perform a classification on the whole dataset (without considering subsets) using the Gradient Boosted Decision Trees (BDT)
+First, perform a classification on the whole dataset (without considering subsets) using the Gradient Boosted Decision Trees (BDT).
 Than, train 3 Deep Neural Networks, one for each subset considering the number of jets.
 
 ## Some Feature Work
@@ -58,10 +58,10 @@ Distributions of some of the angular variables are uniform (this is a problem, b
 They have different distributions for Signal and Background. Finally drop all phi variables: PRI_tau_phi, PRI_lep_phi, PRI_jet_leading_phi, PRI_jet_subleading_phi.
 
 ## Scaling of the Data
-Before start working on the DNN and the BDT, before each procedure, the input data have been scaled with a Standard Scaling.
+Before start working on the DNN and the BDT, the input data have been scaled with a Standard Scaling.
 
 ## BDT Model
-Has been used the class `HistGradientBoostingClassifier` from the library `sklearn`. This BDT model has been used to train the whole data set. This model runs very fast and accurate in respect to the DNN one.
+Has been used the class `HistGradientBoostingClassifier` from the library `sklearn`. This BDT model has been used to train the whole data set. It runs very fast and accurate in respect to the DNN one.
 
 ## Neural Network Structure
 Have been used 3 DNNs, one for each subset according to the number of jets. Has been used the library `keras`.
