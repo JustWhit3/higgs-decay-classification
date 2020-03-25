@@ -47,15 +47,15 @@ Than, train 3 Deep Neural Networks, one for each subset considering the number o
 ## Some Feature Work
 Distributions of some of the angular variables are uniform (this is a problem, because I coudn't use them for the discrimination between signal and background). So the idea is to build new features according to relative angles:
 
-• Delta_phi_tau_lep
+• `Delta_phi_tau_lep`
 
-• Delta_phi_met_lep
+• `Delta_phi_met_lep`
 
-• Delta_phi_jet_jet
+• `Delta_phi_jet_jet`
 
-• Delta_eta_tau_lep
+•` Delta_eta_tau_lep`
 
-They have different distributions for Signal and Background. Finally drop all phi variables: PRI_tau_phi, PRI_lep_phi, PRI_jet_leading_phi, PRI_jet_subleading_phi.
+They have different distributions for Signal and Background. Finally drop all phi variables: `PRI_tau_phi`, `PRI_lep_phi`, `PRI_jet_leading_phi`, `PRI_jet_subleading_phi`.
 
 ## Scaling of the Data
 Before start working on the DNN and the BDT, the input data have been scaled with a Standard Scaling.
@@ -84,4 +84,4 @@ Have been used 3 DNNs, one for each subset according to the number of jets. Has 
 
 ## Evaluation of the classification
 The combination of the models has been performed using the Logistic Regression on both outpus of DNN and BDT. The class used is `LogisticRegression` from the library `sklearn`.
-Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" for more indormations or see its definition in the code). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
+Evaluation of the classification process is given by a metric called "AMS" (see the "PDF_dataset.pdf" or the own explanation in the "Reference guides" folder). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
