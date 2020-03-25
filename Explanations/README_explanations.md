@@ -1,4 +1,5 @@
 ## Explanations folder
+### General informations
 This folder contains all the informations related to the explanations of what my program do.
 
 ### List of the documents in the folder
