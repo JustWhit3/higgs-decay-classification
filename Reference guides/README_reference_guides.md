@@ -5,3 +5,6 @@ This folder contains all the informations related to the classes, libraries and 
 ### List of the documents in the folder
 #### 1) "AMS_functions.ipynb"
 This document contain a detailed description of what AMS functions, used in the main code, do.
+
+#### 1) "Plot_distributions.ipynb"
+This document contain a detailed description of what Plot_distributions functions, used in the main code, do.
