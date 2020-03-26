@@ -6,5 +6,9 @@ This folder contains all the informations related to the classes, libraries and 
 #### 1) "AMS_functions.ipynb"
 This document contain a detailed description of what AMS functions, used in the main code, do.
 
-#### 1) "Plot_distributions.ipynb"
+#### 2) "Plot_distributions.ipynb"
 This document contain a detailed description of what Plot_distributions functions, used in the main code, do.
+
+
+#### 2) "Make_model.ipynb"
+This document contain a detailed description of what Make_model function, used in the main code, do.
