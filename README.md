@@ -11,7 +11,7 @@ view. In this, you will not find explicit references to the code or to the techn
 
 - "Reference guides": this folder contains all the reference guides related to understand how work all the functions and classes defined in the project.
 
-NOTE: For each folder there is a proper README.md file that explains in detail what are the documents inside it and what they do.
+NOTE: for each folder there is a proper README.md file that explains in detail what are the documents inside it and what they do.
 
 ## Important information
 
