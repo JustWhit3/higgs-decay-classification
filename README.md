@@ -1,13 +1,17 @@
-# Useful Informations (updating...)
+# Useful Informations
  
-## List of the documents in the repository (except this)
+## List of the folders in the repository
 
-- "General_Informations.md": contains general informations about the program written with Python 3.
+- "Explanations": this folder contains all the documents related to the explanations of the analysis from a physical point of
+view. In this, you will not find explicit references to the code or to the technical aspects of the project, but only theoretical explanations.
 
-- "PDF_dataset.pdf": it's the pdf to which I inxpired for the writing of the code. It contains also more technical informations 
-about the AMS score and others.
+- "How-to guides": this folder contains all the guides necessary to execute the program in your device and to reproduce the same simulation in your dataset.
 
-- "Program.ipynb": it's the main program written with Python 3.
+- "Project": this folder contains the whole code of the project and some graphs and informations related to the representation of the final results.
+
+- "Reference guides": this folder contains all the reference guides related to understand how work all the functions and classes defined in the project.
+
+NOTE. For each folder there is a proper README.md file that explains in detail what are the documents inside it and what they do.
 
 ## Important information
 
