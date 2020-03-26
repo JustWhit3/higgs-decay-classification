@@ -11,7 +11,7 @@ This document contains the whole code of the project. You can understand how to 
 Contains the graph of the final AMS, obtained from the combnation of the AMS from the BDT and the DNNs outputs, with a comparison with the two single AMSs.
 
 #### 3) "s_c_unweighted.png"
-Contains the unweighted histogram for the final representation of the discrimination between signal and background data. From the physical point of view is not useful, but could be useful to show also it.
+Contains the unweighted histogram for the final representation of the discrimination between signal and background data. From the physical point of view is not useful, but could be nice to show also it.
 
 #### 4) "s_c_weighted.png"
 Contains the weighted histogram for the final representation of the discrimination between signal and background data. This is more useful and correct from the physical point of view.
