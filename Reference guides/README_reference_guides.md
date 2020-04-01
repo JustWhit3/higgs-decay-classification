@@ -60,3 +60,15 @@ The function depends on 3 variables:
 1) "dataset": it's the name of the dataset. It receives a dataframe from pandas.
 2) "string": it's related from the kind of subset you want. It's a string, you've to put the letter of the subset you want.
 3) "thing": this is related to the object that you want the function returns (subset, validation weights, binary array for classification etc...). It's a string.
+
+#### Splitting_jets_function.py
+
+Definition of the function for the splitting into jets for the DNNs. This function is useful to split my dataset keeping into account also the number of jets in the final state of the Higgs boson decay (this is useful for the DNNs only). The dataset is divided into three sets of data: one for the 0 jets case, one for the 1 jet case and one for the 2 or 3 jets case. This function takes several arguments:
+1) "subset": is the training set obtained from the previous splitting of the dataset.
+2) "subset_val": is the validation set obtained from the previous splitting of the dataset.
+3) "subset_test": is the test set obtained from the previous splitting of the dataset.
+3) "jets_number": indicated the number of jets. It's an integer.
+4-6) "y_subset", "y_subset_val" and "y_subset_test": are respectively the binary arrays for the train, validation and test set.
+7-8) "weights_val" and "weights_test": are the weights of the validation and test set.
+9) "thing": it's a string. This takes the name of the object that you want in the output. 
+
