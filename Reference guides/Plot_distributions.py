@@ -41,3 +41,34 @@ def plot_distributions_final(prediction_val, prediction_test, true_val, n_bins, 
     plt.xlabel("Model Output")
     plt.ylabel("Counts")
     plt.yscale('log')
+
+def plot_distributions(prediction, true, n_bins, weighted, weights):
+    
+    # Get histograms from our model
+    if weighted:
+        hist_b = np.histogram(prediction[:,1][true[:,0]==1], bins=n_bins, range=(0,1), weights=weights[true[:,0]==1])
+        hist_s = np.histogram(prediction[:,1][true[:,1]==1], bins=n_bins, range=(0,1), weights=50*weights[true[:,1]==1])
+        
+    else:
+        hist_b = np.histogram(prediction[:,1][true[:,0]==1], bins=n_bins, range=(0,1))
+        hist_s = np.histogram(prediction[:,1][true[:,1]==1], bins=n_bins, range=(0,1))
+
+    bin_edges = hist_b[1]
+    bin_centers = ( bin_edges[:-1] + bin_edges[1:]  ) /2
+    bin_widths = (bin_edges[1:] - bin_edges[:-1])
+
+    # Draw objects
+    ax = plt.subplot(111)
+    ax.bar(bin_centers, hist_b[0], width=bin_widths, alpha=.9)
+    ax.bar(bin_centers, hist_s[0], bottom=hist_b[0], width=bin_widths, alpha=.9)
+    plt.xlim(-.01,1.01)
+
+    if weighted:
+        plt.title("Weighted Validation Set Distribution")
+        plt.legend(['Background', r'$50\cdot$Signal'])
+    else:
+        plt.title("Validation Set Distribution (unweighted)")
+        plt.legend(['Background', 'Signal'])
+    plt.xlabel("DNN Output")
+    plt.ylabel("Counts")
+    plt.yscale('log')
