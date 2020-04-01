@@ -68,7 +68,9 @@ Definition of the function for the splitting into jets for the DNNs. This functi
 2) "subset_val": is the validation set obtained from the previous splitting of the dataset.
 3) "subset_test": is the test set obtained from the previous splitting of the dataset.
 3) "jets_number": indicated the number of jets. It's an integer.
-4-6) "y_subset", "y_subset_val" and "y_subset_test": are respectively the binary arrays for the train, validation and test set.
-7-8) "weights_val" and "weights_test": are the weights of the validation and test set.
+
+4,5 and 6) "y_subset", "y_subset_val" and "y_subset_test": are respectively the binary arrays for the train, validation and test set.
+
+7 and 8) "weights_val" and "weights_test": are the weights of the validation and test set.
 9) "thing": it's a string. This takes the name of the object that you want in the output. 
 
