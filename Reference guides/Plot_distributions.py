@@ -1,3 +1,13 @@
+#There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.This functions are useful for the plotting of the distributions of each model. I'll explain only the second one, because it's more complete and extended in respect to the first one. So, this one takes 7 arguments:
+
+#+ "prediction_val" that are prediction data for the validation set. It's a 2-dim array.
+#+ "prediction_test" that are prediction data for the test set. It's a 2-dim array.
+#+ "true_val" that are the output data of the model (for the validation set). It's a 2-dim array.
+#+ "n_bins" that are the number of bins (usually set to 50). It's an integer.
+#+ "weighted" is a boolean variable set to be True if the histogram is weighted, otherwise if it's unweighted.
+#+ "weights_val" in case in which my histogram is weighted this are the weights of the validation data.
+#+ "weights_test" and this are the weights of the test data.
+
 import numpy as np
 from matplotlib import pyplot as plt
 
