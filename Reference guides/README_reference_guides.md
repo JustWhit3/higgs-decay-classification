@@ -33,7 +33,7 @@ There are two functions defined in my program: `plot_distributions` and `plot_di
 
 #### Make_model.ipynb 
 
-This document contains a detailed description of what" Make_model" function, used in the main code, do. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN moden the same code. This function takes 7 arguments:
+This document contains a detailed description of what" Make_model" function, used in the main code, do. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. This function takes 7 arguments:
 
 + "layer_sizes" is related to the size of the layers of the network. It takes a list of integers.
 + "activation" is related to the activation function that you use. It takes a string with the name of the activation function.
