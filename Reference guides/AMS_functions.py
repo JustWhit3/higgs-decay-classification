@@ -1,3 +1,6 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
 def NN_output_to_AMS(x_cut, predictions, label_vectors, weights):
     
     b_reg = 10
