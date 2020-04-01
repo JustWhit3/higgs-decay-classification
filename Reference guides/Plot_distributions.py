@@ -1,4 +1,7 @@
-#There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.This functions are useful for the plotting of the distributions of each model. I'll explain only the second one, because it's more complete and extended in respect to the first one. So, this one takes 7 arguments:
+#There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.
+#This functions are useful for the plotting of the distributions of each model. 
+#I'll explain only the second one, because it's more complete and extended in respect to the first one. 
+#So, this one takes 7 arguments:
 
 #+ "prediction_val" that are prediction data for the validation set. It's a 2-dim array.
 #+ "prediction_test" that are prediction data for the test set. It's a 2-dim array.
