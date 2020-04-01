@@ -1,3 +1,6 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
 def plot_distributions_final(prediction_val, prediction_test, true_val, n_bins, weighted, weights_val, weights_test):
     
     # Get histograms from our model
