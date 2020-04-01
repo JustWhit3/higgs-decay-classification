@@ -1,3 +1,15 @@
+#AMS metric is used for the evaluation of my model. To see its definition see the "PDF_dataset.pdf" document into the "Explanations" folder.
+#In this document have been defined two functions:
+
+#1) `NN_output_to_AMS`: 
+#this function takes 4 arguments:
+#+ "x_cut" is the cut parameter of the AMS. It ranges from 0.5 to 1 in steps of 0.1.
+#+ "predictions" is a binary array, defined from the set of data that we're considering (for ex: validation set).
+#+ "label_vectors" is a binary array constructed from the dataset, used for each model, that distinguishes an event between signal and background.
+#+ "weights" this takes the weights associated to each data of my dataset (in my case the "KaggleWeight").
+
+#2) `plot_AMS`: this function takes similar arguments of the previous one. It uses the previous one to plot the final result of the AMS.
+
 import numpy as np
 from matplotlib import pyplot as plt
 
