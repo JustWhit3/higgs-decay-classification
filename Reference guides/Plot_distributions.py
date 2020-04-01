@@ -1,7 +1,4 @@
-#There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.
-#This functions are useful for the plotting of the distributions of each model. 
-#I'll explain only the second one, because it's more complete and extended in respect to the first one. 
-#So, this one takes 7 arguments:
+#There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.This functions are useful for the plotting of the distributions of each model. I'll explain only the second one, because it's more complete and extended in respect to the first one. So, this one takes 7 arguments:
 
 #+ "prediction_val" that are prediction data for the validation set. It's a 2-dim array.
 #+ "prediction_test" that are prediction data for the test set. It's a 2-dim array.
@@ -15,7 +12,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 def plot_distributions_final(prediction_val, prediction_test, true_val, n_bins, weighted, weights_val, weights_test):
-    
+    '''Useful to plot the final result, considering also the test set.'''
     # Get histograms from our model
     if weighted:
         hist_b = np.histogram(prediction_val[:,1][true_val[:,0]==1], bins=n_bins, range=(0,1), 
@@ -56,6 +53,7 @@ def plot_distributions_final(prediction_val, prediction_test, true_val, n_bins, 
     plt.yscale('log')
 
 def plot_distributions(prediction, true, n_bins, weighted, weights):
+    '''Useful to plot the final result, without considering also the test set.'''
     
     # Get histograms from our model
     if weighted:
