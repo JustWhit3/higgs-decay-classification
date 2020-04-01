@@ -18,6 +18,7 @@
 import pandas as pd
 
 def splitting (dataset, string, thing):
+    '''Splits dataset into subsets.'''
     subset = dataset[dataset['KaggleSet']==string]
     
     #I have to construct binary arrays for my network.
