@@ -5,7 +5,7 @@ This folder contains all the informations related to the classes and libraries u
 ### List of the documents in the folder
 #### AMS_functions.py
 
-This document contains a detailed description of what AMS functions, used in the main code, do.
+This document contains the definition and explanation of the AMS functions.
 AMS metric is used for the evaluation of my model. To see its definition see the "PDF_dataset.pdf" document into the "Explanations" folder.
 In this document have been defined two functions:
 
@@ -20,7 +20,7 @@ this function takes 4 arguments:
 
 #### Plot_distributions.py
 
-This document contains a detailed description of what "Plot_distributions" functions, used in the main code, do.
+This document contains the definition and explanation of the "plot_distribution" functions.
 There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.This functions are useful for the plotting of the distributions of each model. I'll explain only the second one, because it's more complete and extended in respect to the first one. So, this one takes 7 arguments:
 
 + "prediction_val" that are prediction data for the validation set. It's a 2-dim array.
@@ -31,9 +31,9 @@ There are two functions defined in my program: `plot_distributions` and `plot_di
 + "weights_val" in case in which my histogram is weighted this are the weights of the validation data.
 + "weights_test" and this are the weights of the test data.
 
-#### Make_model.ipynb 
+#### Make_model.py
 
-This document contains a detailed description of what" Make_model" function, used in the main code, do. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. This function takes 7 arguments:
+This document contains the definition and explanation of the "make_model" functions. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. This function takes 7 arguments:
 
 + "layer_sizes" is related to the size of the layers of the network. It takes a list of integers.
 + "activation" is related to the activation function that you use. It takes a string with the name of the activation function.
@@ -41,3 +41,22 @@ This document contains a detailed description of what" Make_model" function, use
 + "optimizer" this takes a string with the name of the optimizer you want to use.
 + "regularization" this takes a string with the name of the regularizer you want to use.
 + "input_dimension" this takes the shape of the input data.
+
+#### Splitting_functions.py
+
+This document contains the definition and explanation of the "splitting" function. This function is useful for the splitting of the dataset into a subset (train, test or validation set). In particular, given a certain dataset, this gives:
+1) The selected subset that you want.
+2) The binary vectors both for the networks and the BDT.
+3) The weights associated to the validation and test set.
+
+In this function it has been applyied also an operation on the feature enginnering:
+The problem is that the "phi" variables, in the Kaggle dataset, have a signal distribution that is very similar to the background one. So it's better to consider their linear combination (difference in this case) to make them useful in my classification:
++ `Delta_phi_tau_lep` = `PRI_tau_phi` - `PRI_lep_phi` (not helpful for 2 jets category)
++ `Delta_phi_met_lep` = `PRI_met_phi` - `PRI_lep_phi`
++ `Delta_phi_jet_jet` = `PRI_jet_leading_phi` - `PRI_jet_subleading_phi`
+    + Drop `PRI_tau_phi`,  `PRI_lep_phi`, `PRI_met_phi`, `PRI_jet_leading_phi` and `PRI_jet_subleading_phi`
+
+The function depends on 3 variables:
+1) "dataset": it's the name of the dataset. It receives a dataframe from pandas.
+2) "string": it's related from the kind of subset you want. It's a string, you've to put the letter of the subset you want.
+3) "thing": this is related to the object that you want the function returns (subset, validation weights, binary array for classification etc...). It's a string.
