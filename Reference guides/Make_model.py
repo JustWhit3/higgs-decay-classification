@@ -1,3 +1,14 @@
+#It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. 
+#This function takes 7 arguments:
+
+#+ "layer_sizes" is related to the size of the layers of the network. It takes a list of integers.
+#+ "activation" is related to the activation function that you use. It takes a string with the name of the activation 
+#function.
+#+ "dropout rate" this is the rate of the dropout, if 0, there will be no dropout.
+#+ "optimizer" this takes a string with the name of the optimizer you want to use.
+#+ "regularization" this takes a string with the name of the regularizer you want to use.
+#+ "input_dimension" this takes the shape of the input data.
+
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Dropout
 from keras.regularizers import l1, l2
