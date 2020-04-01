@@ -9,6 +9,8 @@
 #7-8) "weights_val" and "weights_test": are the weights of the validation and test set.
 #9) "thing": it's a string. This takes the name of the object that you want in the output. 
 
+import numpy as np
+
 def splitting_jets (subset, subset_val, subset_test, jets_number, y_subset, y_subset_val, y_subset_test, weights_val, weights_test, thing):
     '''Splits dataset into subsets related to the number of jets.'''
     
