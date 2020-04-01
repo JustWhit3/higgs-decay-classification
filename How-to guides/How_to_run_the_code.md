@@ -17,6 +17,6 @@ To run the code you need first to download the Jupyter Notebook from: https://ju
 Than you've to tip this command on the bash:
 `jupyter-notebook`.
 
-It's better if you put your executable code in the Home of your computer, in a way to make easy to find it. Be sure that the libraries with the definition of the three functions "AMS_functions.py", "Make_model.py" and "Plot_distributions.py" are in the same folder of the "Program.ipynb".
+It's better if you put your executable code in the Home of your computer, in a way to make easy to find it. Be sure that the libraries with the definition of the functions like "AMS_functions.py", "Make_model.py" and "Plot_distributions.py" and others are in the same folder of the "Program.ipynb".
 
 Once the page of Jupyter has been opened, you can select the "Program.ipynb" and click with the left botton on it.
