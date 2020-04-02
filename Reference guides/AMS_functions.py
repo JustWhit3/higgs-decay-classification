@@ -37,3 +37,44 @@ def plot_AMS(predictions, label_vectors, weights):
     plt.grid()
     
     print('The best AMS Score is {:.3f} at a Cut Parameter of {:.2f}'.format(max(y), x[np.argmax(y)]))
+
+    return 0
+
+
+#TESTING "NN_OUTPUT_TO_AMS":
+from hypothesis import given, settings
+import hypothesis.strategies as st
+import hypothesis.extra
+from hypothesis.extra.numpy import arrays
+from hypothesis.extra.pandas import series, range_indexes
+
+@given(
+       x=st.floats(0.5, 1),
+       y=arrays(np.float64, (1,100000), elements=st.floats(0,1), fill=None, unique=False),
+       z=arrays(np.int8, (1,100000), elements=None, fill=None, unique=False), 
+       t=series(elements=None, dtype=np.float64, index=range_indexes(min_size=1, max_size=1), fill=None, unique=False)
+      )
+@settings(deadline=None)
+def test_NN_output_to_AMS(x,y,z,t):
+    b_reg = 10
+    s = sum(t[(y[:,1] > x)  & (z[:,1] ==1)])
+    b = sum(t[(y[:,1] > x)  & (z[:,1] ==0)])
+    AMS = np.sqrt(  2 *( (s + b + b_reg) * np.log(1 + s/(b + b_reg)) -s )  )
+    assert NN_output_to_AMS(x,y,z,t) == AMS
+
+
+#TESTING "PLOT_AMS":
+@given(
+       y=arrays(np.float64, (1,100000), elements=st.floats(0,1), fill=None, unique=False),
+       z=arrays(np.int8, (1,100000), elements=None, fill=None, unique=False), 
+       t=series(elements=None, dtype=np.float64, index=range_indexes(min_size=1, max_size=1), fill=None, unique=False)
+      )
+@settings(deadline=None)
+def test_plot_AMS(y,z,t):
+    x_p = np.arange(0.5,1,1e-2)
+    y_p = np.array(  [NN_output_to_AMS(x,y,z,t) for x in x_p ]  )
+    assert plot_AMS(y,z,t) == 0
+
+
+
+
