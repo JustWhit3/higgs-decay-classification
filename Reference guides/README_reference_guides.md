@@ -72,3 +72,7 @@ Definition of the function for the splitting into jets for the DNNs. This functi
 6) "weights_val" and "weights_test": are the weights of the validation and test set.
 7) "thing": it's a string. This takes the name of the object that you want in the output. 
 
+### Function testing
+if you want to test the functionality of the functions you've to do this passages:
+1) Download the pytest tool from your shell, typing: `pip install pytest`.
+2) Write on the shell: `pytest <function.py>` where "<function.py" represents the name of the function you want to test.
