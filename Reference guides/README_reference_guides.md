@@ -73,6 +73,7 @@ Definition of the function for the splitting into jets for the DNNs. This functi
 7) "thing": it's a string. This takes the name of the object that you want in the output. 
 
 ### Function testing
-if you want to test the functionality of the functions you've to do this passages:
+For the function testing has been used the tool `pytest`.
+If you want to test the functionality of the functions you've to do this passages:
 1) Download the pytest tool from your shell, typing: `pip install pytest`.
 2) Write on the shell: `pytest <function.py>` where "<function.py" represents the name of the function you want to test.
