@@ -76,4 +76,4 @@ Definition of the function for the splitting into jets for the DNNs. This functi
 For the function testing has been used the tool `pytest`.
 If you want to test the functionality of the functions you've to do this passages:
 1) Download the pytest tool from your shell, typing: `pip install pytest`.
-2) Write on the shell: `pytest <function.py>` where "<function.py" represents the name of the function you want to test.
+2) Write on the shell: `pytest <function>.py` where "<function>" represents the name of the function you want to test and ".py" is the file extension.
