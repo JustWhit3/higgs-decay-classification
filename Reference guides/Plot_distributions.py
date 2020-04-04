@@ -52,6 +52,8 @@ def plot_distributions_final(prediction_val, prediction_test, true_val, n_bins, 
     plt.ylabel("Counts")
     plt.yscale('log')
 
+    return 0
+
 def plot_distributions(prediction, true, n_bins, weighted, weights):
     '''Useful to plot the final result, without considering also the test set.'''
     
@@ -83,3 +85,43 @@ def plot_distributions(prediction, true, n_bins, weighted, weights):
     plt.xlabel("DNN Output")
     plt.ylabel("Counts")
     plt.yscale('log')
+
+    return 0
+
+#TESTING "PLOT_DISTRIBUTIONS":
+from hypothesis import given, settings
+import hypothesis.strategies as st
+import hypothesis.extra
+from hypothesis.extra.numpy import arrays
+from hypothesis.extra.pandas import series, range_indexes
+
+@given(
+       x=arrays(np.float64, (1,100000), elements=st.floats(0,1), fill=None, unique=False),
+       y=arrays(np.int8, (1,100000), elements=st.floats(1,1), fill=None, unique=False), 
+       z=st.integers(1,100),
+       t=st.booleans(),
+       k=series(elements=st.floats(1,20), dtype=np.float64, index=range_indexes(min_size=1, max_size=1), fill=None, unique=False)
+      )
+@settings(deadline=None)
+def test_plot_distributions(x,y,z,t,k):
+    assert plot_distributions(x,y,z,t,k) == 0
+
+#TESTING "PLOT_DISTRIBUTIONS_FINAL":
+from hypothesis import given, settings
+import hypothesis.strategies as st
+import hypothesis.extra
+from hypothesis.extra.numpy import arrays
+from hypothesis.extra.pandas import series, range_indexes
+
+@given(
+       x_val=arrays(np.float64, (1,100000), elements=st.floats(0,1), fill=None, unique=False),
+       x_test=arrays(np.float64, (1,100000), elements=st.floats(0,1), fill=None, unique=False),
+       y=arrays(np.int8, (1,100000), elements=st.floats(1,1), fill=None, unique=False), 
+       z=st.integers(1,100),
+       t=st.booleans(),
+       k_val=series(elements=st.floats(1,20), dtype=np.float64, index=range_indexes(min_size=1, max_size=1), fill=None, unique=False),
+       k_test=series(elements=st.floats(1,20), dtype=np.float64, index=range_indexes(min_size=1, max_size=1), fill=None, unique=False)
+      )
+@settings(deadline=None)
+def test_plot_distributions_final(x_val,x_test,y,z,t,k_val,k_test):
+    assert plot_distributions_final(x_val,x_test,y,z,t,k_val,k_test) == 0
