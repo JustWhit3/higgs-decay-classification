@@ -101,3 +101,88 @@ def splitting_jets (subset, subset_val, subset_test, jets_number, y_subset, y_su
     else: None
 
     del subset_jets, subset_val_jets, subset_test_jets
+
+#TESTING "SPLITTING_JETS" FUNCTION (DOESN'T WORK):
+from hypothesis import given, settings, HealthCheck
+import hypothesis.strategies as st
+import hypothesis.extra
+from hypothesis.extra.numpy import arrays
+from hypothesis.extra.pandas import series, range_indexes, columns, data_frames, indexes
+
+@given(
+       x=data_frames(columns=columns(['DER_mass_MMC', 'DER_mass_transverse_met_lep', 'DER_mass_vis',
+       'DER_pt_h', 'DER_deltaeta_jet_jet', 'DER_mass_jet_jet',
+       'DER_prodeta_jet_jet', 'DER_deltar_tau_lep', 'DER_pt_tot', 'DER_sum_pt',
+       'DER_pt_ratio_lep_tau', 'DER_met_phi_centrality',
+       'DER_lep_eta_centrality', 'PRI_tau_pt', 'PRI_tau_eta', 'PRI_tau_phi',
+       'PRI_lep_pt', 'PRI_lep_eta', 'PRI_lep_phi', 'PRI_met', 'PRI_met_phi',
+       'PRI_met_sumet', 'PRI_jet_num', 'PRI_jet_leading_pt',
+       'PRI_jet_leading_eta', 'PRI_jet_leading_phi', 'PRI_jet_subleading_pt',
+       'PRI_jet_subleading_eta', 'PRI_jet_subleading_phi', 'PRI_jet_all_pt',
+       'Delta_phi_tau_lep', 'Delta_phi_jet_jet', 'Delta_phi_met_lep',
+       'Delta_eta_tau_lep'],
+       dtype=float),
+       rows=st.tuples(st.floats(allow_nan=False), st.floats(allow_nan=False)).map(sorted)),
+       y=data_frames(columns=columns(['DER_mass_MMC', 'DER_mass_transverse_met_lep', 'DER_mass_vis',
+       'DER_pt_h', 'DER_deltaeta_jet_jet', 'DER_mass_jet_jet',
+       'DER_prodeta_jet_jet', 'DER_deltar_tau_lep', 'DER_pt_tot', 'DER_sum_pt',
+       'DER_pt_ratio_lep_tau', 'DER_met_phi_centrality',
+       'DER_lep_eta_centrality', 'PRI_tau_pt', 'PRI_tau_eta', 'PRI_tau_phi',
+       'PRI_lep_pt', 'PRI_lep_eta', 'PRI_lep_phi', 'PRI_met', 'PRI_met_phi',
+       'PRI_met_sumet', 'PRI_jet_num', 'PRI_jet_leading_pt',
+       'PRI_jet_leading_eta', 'PRI_jet_leading_phi', 'PRI_jet_subleading_pt',
+       'PRI_jet_subleading_eta', 'PRI_jet_subleading_phi', 'PRI_jet_all_pt',
+       'Delta_phi_tau_lep', 'Delta_phi_jet_jet', 'Delta_phi_met_lep',
+       'Delta_eta_tau_lep'],
+       dtype=float),
+       rows=st.tuples(st.floats(allow_nan=False), st.floats(allow_nan=False)).map(sorted)),
+       z=data_frames(columns=columns(['DER_mass_MMC', 'DER_mass_transverse_met_lep', 'DER_mass_vis',
+       'DER_pt_h', 'DER_deltaeta_jet_jet', 'DER_mass_jet_jet',
+       'DER_prodeta_jet_jet', 'DER_deltar_tau_lep', 'DER_pt_tot', 'DER_sum_pt',
+       'DER_pt_ratio_lep_tau', 'DER_met_phi_centrality',
+       'DER_lep_eta_centrality', 'PRI_tau_pt', 'PRI_tau_eta', 'PRI_tau_phi',
+       'PRI_lep_pt', 'PRI_lep_eta', 'PRI_lep_phi', 'PRI_met', 'PRI_met_phi',
+       'PRI_met_sumet', 'PRI_jet_num', 'PRI_jet_leading_pt',
+       'PRI_jet_leading_eta', 'PRI_jet_leading_phi', 'PRI_jet_subleading_pt',
+       'PRI_jet_subleading_eta', 'PRI_jet_subleading_phi', 'PRI_jet_all_pt',
+       'Delta_phi_tau_lep', 'Delta_phi_jet_jet', 'Delta_phi_met_lep',
+       'Delta_eta_tau_lep'],
+       dtype=float),
+       rows=st.tuples(st.floats(allow_nan=False), st.floats(allow_nan=False)).map(sorted)),
+       t=st.integers(0,2),
+       k=arrays(np.int8, (1,250000), elements=st.floats(1,1), fill=None, unique=False), 
+       l=arrays(np.int8, (1,100000), elements=st.floats(1,1), fill=None, unique=False),
+       m=arrays(np.int8, (1,450000), elements=st.floats(1,1), fill=None, unique=False),
+       a=series(elements=None, dtype=np.float64, index=indexes(elements=None, dtype=np.int64, min_size=1, max_size=1, unique=True), fill=None, unique=False),
+       b=series(elements=None, dtype=np.float64, index=indexes(elements=None, dtype=np.int64, min_size=1, max_size=1, unique=True), fill=None, unique=False),
+       c=st.text(),
+       x_1=data_frames(columns=columns(['DER_mass_MMC', 'DER_mass_transverse_met_lep', 'DER_mass_vis',
+       'DER_pt_h', 'DER_deltar_tau_lep', 'DER_pt_tot', 'DERU_sum_pt',
+       'DER_pt_ratio_lep_tau', 'DER_met_phi_centrality', 'PRI_tau_pt',
+       'PRI_tau_eta', 'PRI_lep_pt', 'PRI_lep_eta', 'PRI_met', 'PRI_met_phi',
+       'PRI_met_sumet', 'Delta_phi_tau_lep', 'Delta_phi_met_lep',
+       'Delta_eta_tau_lep'],
+       dtype=float),
+       rows=st.tuples(st.floats(allow_nan=False), st.floats(allow_nan=False)).map(sorted)),
+       x_2=data_frames(columns=columns(['DER_mass_MMC', 'DER_mass_transverse_met_lep', 'DER_mass_vis',
+       'DER_pt_h', 'DER_deltaeta_jet_jet', 'DER_mass_jet_jet',
+       'DER_prodeta_jet_jet', 'DER_deltar_tau_lep', 'DER_pt_tot', 'DER_sum_pt',
+       'DER_pt_ratio_lep_tau', 'DER_met_phi_centrality',
+       'DER_lep_eta_centrality', 'PRI_tau_pt', 'PRI_tau_eta', 'PRI_lep_pt',
+       'PRI_lep_eta', 'PRI_met', 'PRI_met_phi', 'PRI_met_sumet',
+       'PRI_jet_leading_pt', 'PRI_jet_leading_eta', 'PRI_jet_subleading_pt',
+       'PRI_jet_subleading_eta', 'PRI_jet_all_pt', 'Delta_phi_tau_lep',
+       'Delta_phi_jet_jet', 'Delta_phi_met_lep', 'Delta_eta_tau_lep'],
+       dtype=float),
+       rows=st.tuples(st.floats(allow_nan=False), st.floats(allow_nan=False)).map(sorted)),
+       y_1=arrays(np.int8, (1,138925), elements=st.floats(1,1), fill=None, unique=False),
+       w_1=series(elements=None, dtype=np.float64, index=indexes(elements=None, dtype=np.int64, min_size=1, max_size=1, unique=True), fill=None, unique=False),
+      )
+@settings(suppress_health_check=(HealthCheck.too_slow,HealthCheck.data_too_large,),deadline=None)
+def test_splitting_jets(x,y,z,t,k,l,m,a,b,c,x_1,x_2,y_1,w_1):
+    assert (
+	    splitting_jets(x,y,z,t,k,l,m,a,b,c) == x_1 or
+	    splitting_jets(x,y,z,t,k,l,m,a,b,c) == x_2 or
+	    splitting_jets(x,y,z,t,k,l,m,a,b,c) == y_1 or
+	    splitting_jets(x,y,z,t,k,l,m,a,b,c) == w_1
+	   )
