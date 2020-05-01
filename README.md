@@ -2,7 +2,7 @@
  
 ## List of the folders in the repository
 
-- "Explanations": this folder contains all the documents related to the explanations of the analysis from a physical point of
+- [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations): this folder contains all the documents related to the explanations of the analysis from a physical point of
 view. In this, you will not find explicit references to the code or to the technical aspects of the project, but only theoretical explanations.
 
 - "How-to guides": this folder contains all the guides necessary to execute the program in your device and to reproduce the same simulation in your dataset.
