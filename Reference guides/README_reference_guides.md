@@ -3,7 +3,7 @@
 This folder contains all the informations related to the classes and libraries used for the program.
 
 ### List of the documents in the folder
-#### AMS_functions.py
+#### AMS_functions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/AMS_functions.py))
 
 This document contains the definition and explanation of the AMS functions.
 AMS metric is used for the evaluation of my model. To see its definition see the "PDF_dataset.pdf" document into the "Explanations" folder.
@@ -18,7 +18,7 @@ this function takes 4 arguments:
 
 2) `plot_AMS`: this function takes similar arguments of the previous one. It uses the previous one to plot the final result of the AMS.
 
-#### Plot_distributions.py
+#### Plot_distributions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Plot_distributions.py))
 
 This document contains the definition and explanation of the "plot_distribution" functions.
 There are two functions defined in my program: `plot_distributions` and `plot_distributions_final`.This functions are useful for the plotting of the distributions of each model. I'll explain only the second one, because it's more complete and extended in respect to the first one. So, this one takes 7 arguments:
@@ -31,7 +31,7 @@ There are two functions defined in my program: `plot_distributions` and `plot_di
 + "weights_val" in case in which my histogram is weighted this are the weights of the validation data.
 + "weights_test" and this are the weights of the test data.
 
-#### Make_model.py
+#### Make_model.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Make_model.py))
 
 This document contains the definition and explanation of the "make_model" functions. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. This function takes 7 arguments:
 
@@ -42,7 +42,7 @@ This document contains the definition and explanation of the "make_model" functi
 + "regularization" this takes a string with the name of the regularizer you want to use.
 + "input_dimension" this takes the shape of the input data.
 
-#### Splitting_functions.py
+#### Splitting_functions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_function.py))
 
 This document contains the definition and explanation of the "splitting" function. This function is useful for the splitting of the dataset into a subset (train, test or validation set). In particular, given a certain dataset, this gives:
 1) The selected subset that you want.
@@ -61,7 +61,7 @@ The function depends on 3 variables:
 2) "string": it's related from the kind of subset you want. It's a string, you've to put the letter of the subset you want.
 3) "thing": this is related to the object that you want the function returns (subset, validation weights, binary array for classification etc...). It's a string.
 
-#### Splitting_jets_function.py
+#### Splitting_jets_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_jets_function.py))
 
 Definition of the function for the splitting into jets for the DNNs. This function is useful to split my dataset keeping into account also the number of jets in the final state of the Higgs boson decay (this is useful for the DNNs only). The dataset is divided into three sets of data: one for the 0 jets case, one for the 1 jet case and one for the 2 or 3 jets case. This function takes several arguments:
 1) "subset": is the training set obtained from the previous splitting of the dataset.
