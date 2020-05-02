@@ -42,7 +42,7 @@ This document contains the definition and explanation of the "make_model" functi
 + "regularization" this takes a string with the name of the regularizer you want to use.
 + "input_dimension" this takes the shape of the input data.
 
-#### Splitting_functions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_function.py))
+#### Splitting_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_function.py))
 
 This document contains the definition and explanation of the "splitting" function. This function is useful for the splitting of the dataset into a subset (train, test or validation set). In particular, given a certain dataset, this gives:
 1) The selected subset that you want.
