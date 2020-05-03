@@ -1,6 +1,6 @@
 ## Steps to run the code on your device
 ### 0) Download the dataset
-You first need to download the Kaggle dataset from the [site](https://www.kaggle.com/c/higgs-boson/overview).
+You first need to download the CERN Open Dataset from the [site](http://opendata.cern.ch/record/328).
 
 Than move the dataset into your Home folder, and rename it as: "dataset_higgs_challenge.csv".
 ### 1) Download the file
