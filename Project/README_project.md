@@ -16,9 +16,3 @@ This folder contains all the informations related to the code and the results of
 
 - [accuracy_0jets.png](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_0jets.png), 
 [accuracy_1jet.png](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_1jet.png), [accuracy_2jets.png](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_2jets.png): they contain the evolution of the model accuracy after each performance of the DNN.
-
-### Final AMS result
-Final results of the analysis are:
-+ The best AMS Score of the DNN is 3.529 at a Cut Parameter of 0.83.
-+ The best AMS Score of the BDT is 3.578 at a Cut Parameter of 0.83.
-+ The combination of the two AMS scores is 3.652 at a Cut Parameter of 0.88.
