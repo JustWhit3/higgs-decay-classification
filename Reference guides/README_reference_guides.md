@@ -45,9 +45,9 @@ This document contains the definition and explanation of the "make_model" functi
 #### Splitting_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_function.py))
 
 This document contains the definition and explanation of the "splitting" function. This function is useful for the splitting of the dataset into a subset (train, test or validation set). In particular, given a certain dataset, this gives:
-1) The selected subset that you want.
-2) The binary vectors both for the networks and the BDT.
-3) The weights associated to the validation and test set.
++ The selected subset that you want.
++ The binary vectors both for the networks and the BDT.
++ The weights associated to the validation and test set.
 
 In this function it has been applyied also an operation on the feature enginnering:
 The problem is that the "phi" variables, in the Kaggle dataset, have a signal distribution that is very similar to the background one. So it's better to consider their linear combination (difference in this case) to make them useful in my classification:
@@ -56,10 +56,10 @@ The problem is that the "phi" variables, in the Kaggle dataset, have a signal di
 + `Delta_phi_jet_jet` = `PRI_jet_leading_phi` - `PRI_jet_subleading_phi`
     + Drop `PRI_tau_phi`,  `PRI_lep_phi`, `PRI_met_phi`, `PRI_jet_leading_phi` and `PRI_jet_subleading_phi`
 
-#It depends on 2 variables:
-#1) "dataset": it's the name of the dataset. It receives a DataFrame from Pandas.
-#2) "string": it's related to the the kind of subset you want. It's a string, you've to put the letter of the subset
-#you want.
+It depends on 2 variables:
++ "dataset": it's the name of the dataset. It receives a DataFrame from Pandas.
++ "string": it's related to the the kind of subset you want. It's a string, you've to put the letter of the subset
+you want.
 
 #### Splitting_jets_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_jets_function.py))
 
