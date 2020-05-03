@@ -87,6 +87,7 @@ Have been used 3 DNNs, one for each subset according to the number of jets. Has 
 • (0, 1) for perfect signal and (1, 0) for perfect background events.
 
 Here are shown the different model accuracy plots for each subset (depending on the number of jets):
+
 Plot for 0 jets classification:
 
 ![alt text](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_0jets.png)
