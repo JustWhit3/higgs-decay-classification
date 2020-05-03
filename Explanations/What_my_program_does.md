@@ -93,7 +93,8 @@ For all the final results, see the [project](https://github.com/JustWhit3/Softwa
 + Best AMS Score of the DNN: 3.529 at a Cut Parameter of 0.83.
 + Best AMS Score of the BDT: 3.578 at a Cut Parameter of 0.83.
 + Combination of the two AMS scores with Logistic Regression: 3.652 at a Cut Parameter of 0.88.
-Graphical results are showed here:
+
+Graphical results are shown here:
 + Comparison between total, DNNs and BDT AMS ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/s_c_final_AMS.png)).
 + Unweighted distribution for signal-background discrimination for validation set ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/s_c_unweighted.png)).
 + Weighted distribution for signal-background discrimination for validation set ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/s_c_weighted.png)).
