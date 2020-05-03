@@ -25,7 +25,7 @@ Informations about the variables:
 Signal and Background events are labelled and weighted.
 
 ## The Strategy
-To split the Dataset ,according to the number of jets, into subsets (useful only for DNNs):
+To split the Dataset, according to the number of jets, into subsets (useful only for DNNs):
 
 • Events with 0 jets (100.000 events).
 
