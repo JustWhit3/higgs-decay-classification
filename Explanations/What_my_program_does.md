@@ -1,7 +1,7 @@
 # Higgs Boson Machine Learning Classification
 ## General Introduction
 The purpose of this program is to perform a classification of the decay of the Higgs boson into 2 tau in respect to the possible background processes that could happen. For the classification have been considered the cases in which there are 0,1 or 2 jets in the final state.
-This classification has been performed on the free dataset from the Higgs Boson Challenge: ([Link to the challenge](https://www.kaggle.com/c/higgs-boson/overview) and [Link to the CERN Open Dataset](http://opendata.cern.ch/record/328)), that contains data related to the case in which we have in the final state a tau that decays hadronically and the other one that decays leptonically.
+This classification has been performed on the free dataset from the Higgs Boson Challenge: ([Link to the challenge](https://www.kaggle.com/c/higgs-boson/overview) and [Link to the CERN Open Dataset](http://opendata.cern.ch/record/328)), that contains data related to the case in which we have in the final state a tau that decays hadronically and the other one that decays leptonically (data for same leptonic decays of the tau are omitted).
 
 ## Informations on the dataset
 Dataset is divided into some subsets:
