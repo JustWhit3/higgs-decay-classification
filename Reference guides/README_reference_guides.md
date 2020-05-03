@@ -58,8 +58,7 @@ The problem is that the "phi" variables, in the Kaggle dataset, have a signal di
 
 It depends on 2 variables:
 + "dataset": it's the name of the dataset. It receives a DataFrame from Pandas.
-+ "string": it's related to the the kind of subset you want. It's a string, you've to put the letter of the subset
-you want.
++ "string": it's related to the the kind of subset you want. It's a string, you've to put the letter of the test, training or validation set in my case..
 
 #### Splitting_jets_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_jets_function.py))
 
