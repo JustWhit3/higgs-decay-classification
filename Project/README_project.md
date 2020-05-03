@@ -14,6 +14,6 @@ This folder contains all the informations related to the code and the results of
 
 ### Final AMS result
 Final results of the analysis are:
-+ The best AMS Score of the DNN is 3.530 at a Cut Parameter of 0.83.
++ The best AMS Score of the DNN is 3.529 at a Cut Parameter of 0.83.
 + The best AMS Score of the BDT is 3.578 at a Cut Parameter of 0.83.
-+ The combination of the two AMS scores is 3.653 at a Cut Parameter of 0.88.
++ The combination of the two AMS scores is 3.652 at a Cut Parameter of 0.88.
