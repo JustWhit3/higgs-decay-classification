@@ -10,7 +10,6 @@ AMS metric is used for the evaluation of my model. To see its detailed definitio
 
 <img src="https://render.githubusercontent.com/render/math?math=AMS = \sqrt{2 \left( (s %2B b %2B b_{reg}) ln\left(1 %2B \dfrac{s}{b %2B b_{reg}} \right) -s \right)}">
 
-
 where:
 + <img src="https://render.githubusercontent.com/render/math?math=s = \sum_{i} w^{s}_{i}">  is the unormalized sum of signal weights.
 + <img src="https://render.githubusercontent.com/render/math?math=b = \sum_{i} w^{b}_{i}">  is the unormalized sum of background weights.
