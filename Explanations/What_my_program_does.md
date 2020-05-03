@@ -106,7 +106,7 @@ Evaluation of the classification process is given by a metric called "AMS" (see 
 [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) or the own explanation in the [Readme](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/README_reference_guides.md) of the [Reference Guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Reference%20guides)). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
 
 ## Results
-For all the final results, see the [project](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Project) folder. Numerical results (AMS scores) are:
+In this section are presented all the final results. Numerical results (AMS scores) are:
 + Best AMS Score of the DNN: 3.529 at a Cut Parameter of 0.83.
 + Best AMS Score of the BDT: 3.578 at a Cut Parameter of 0.83.
 + Combination of the two AMS scores with Logistic Regression: 3.652 at a Cut Parameter of 0.88.
