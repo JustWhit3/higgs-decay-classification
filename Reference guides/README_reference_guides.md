@@ -63,13 +63,13 @@ It depends on 2 variables:
 #### Splitting_jets_function.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Splitting_jets_function.py))
 
 This document contains the definition of two functions:
-1) `preprocessing_function`: it's used for the preprocessing of the dataset, before applying all the more significant cuts on its features (like the dropping of some of them). This function is useful to set the -999 value of `MMC` variable to the mean improved classification and drop the unuseful features from the subset. It takes only one argument, that is the previous mentioned subset (pandas DataFrame).
+1) `preprocessing_function`: it's used for the preprocessing of the dataset, used before applying all the more significant cuts on its features (like the dropping of some of them). This function sets the -999 value of `MMC` variable to the mean improved classification and drops the unuseful features from the subset. It takes only one argument, that is the previous mentioned subset (pandas DataFrame).
 
-2) The function for the splitting into jets (for the DNNs only): `splitting_jets`. This function is useful to split my dataset, keeping into account also the number of jets, in the final state of the Higgs boson decay. The dataset is divided into three sets of data: one for the 0 jets case, one for the 1 jet case and one for the 2 or 3 jets case. This function takes 4 arguments:
-+ "subset": is one of the set obtained from the previous splitting of the dataset. It's a pandas DataFrame.
+2) The function for the splitting into jets (for the DNNs only): `splitting_jets`. This function is useful to split my dataset, keeping into account the number of jets, in the final state of the Higgs boson decay. The dataset is divided into three sets of data: one for the 0 jets case, one for the 1 jet case and one for the 2 or 3 jets case. This function takes 4 arguments:
++ "subset": is one of the set obtained from the previous splitting of the dataset with the `splitting` function. It's a pandas DataFrame.
 + "y_subset": is the binary array for the subset.
 + "weights": is the weight of the validation or test set.
-+ "jets_number": indicated the number of jets. It's an integer.
++ "jets_number": indicates the number of jets. It's an integer.
 
 ### Function testing
 For the function testing has been used the tool `pytest`.
