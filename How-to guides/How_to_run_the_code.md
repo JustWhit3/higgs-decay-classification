@@ -1,6 +1,6 @@
 ## Steps to run the code on your device
 ### 0) Download the dataset
-You first need to download the Kaggle dataset from the site: https://www.kaggle.com/c/higgs-boson/overview.
+You first need to download the Kaggle dataset from the [site](https://www.kaggle.com/c/higgs-boson/overview).
 
 Than move the dataset into your Home folder, and rename it as: "dataset_higgs_challenge.csv".
 ### 1) Download the file
@@ -12,7 +12,7 @@ You need a software like "Winrar" to extract the files from the ZIP document.
 
 Once you've done this, you need to search for the file "Program.ipynb", into the "Project" folder.
 ### 3) Run the code on your computer
-To run the code you need first to download the Jupyter Notebook from: https://jupyter.org/install. You can use Conda or Pip.
+To run the code you need first to download the Jupyter Notebook from [here](https://jupyter.org/install). You can use Conda or Pip.
 
 Than you've to tip this command on the bash:
 `jupyter-notebook`.
