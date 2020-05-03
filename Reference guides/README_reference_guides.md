@@ -33,7 +33,7 @@ There are two functions defined in my program: `plot_distributions` and `plot_di
 
 #### Make_model.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/Make_model.py))
 
-This document contains the definition and explanation of the "make_model" functions. It has been defined this function, in a way to avoid to repeat everytime you define a new DNN model the same code. This function takes 7 arguments:
+This document contains the definition and explanation of the "make_model" functions. It has been defined this function, in a way to avoid to repeat, everytime you define a new DNN model, the same code. This function takes 7 arguments:
 
 + "layer_sizes" is related to the size of the layers of the network. It takes a list of integers.
 + "activation" is related to the activation function that you use. It takes a string with the name of the activation function.
