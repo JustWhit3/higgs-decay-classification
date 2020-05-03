@@ -6,7 +6,16 @@ This folder contains all the informations related to the classes and libraries u
 #### AMS_functions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/AMS_functions.py))
 
 This document contains the definition and explanation of the AMS functions.
-AMS metric is used for the evaluation of my model. To see its definition see the [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) document into the [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations) folder.
+AMS metric is used for the evaluation of my model. To see its detailed definition see the [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) document into the [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations) folder. The complete formula is:
+
+<img src="https://render.githubusercontent.com/render/math?math=AMS = \sqrt{2 \left( (s %2B b %2B b_{reg}) ln\left(1 %2B \dfrac{s}{b %2B b_{reg}} \right) -s \right)}">
+
+
+where:
++ <img src="https://render.githubusercontent.com/render/math?math=s = \sum_{i} w^{s}_{i}">  is the unormalized sum of signal weights.
++ <img src="https://render.githubusercontent.com/render/math?math=b = \sum_{i} w^{b}_{i}">  is the unormalized sum of background weights.
++ <img src="https://render.githubusercontent.com/render/math?math=b_{reg} = 10">  is a regularization therm that reduces the variance of the AMS.
+
 In this document have been defined two functions:
 
 1) `NN_output_to_AMS`: 
