@@ -57,6 +57,10 @@ Distributions of some of the angular variables are uniform (this is a problem, b
 
 They have different distributions for Signal and Background. Finally drop all phi variables: `PRI_tau_phi`, `PRI_lep_phi`, `PRI_jet_leading_phi`, `PRI_jet_subleading_phi`.
 
+Here is shown an example of some distributions of the new variables (here it's possible to see a clear discrimination between signal and background):
+
+![alt text](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/distributions_variables.png)
+
 ## Scaling of the Data
 Before start working on the DNN and the BDT, the input data have been scaled with a Standard Scaling.
 
