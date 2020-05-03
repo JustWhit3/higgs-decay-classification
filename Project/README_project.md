@@ -12,6 +12,8 @@ This folder contains all the informations related to the code and the results of
 
 - [s_c_weighted.png](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/s_c_weighted.png): contains the weighted histogram for the final representation of the discrimination between signal and background data. This is more useful and correct from the physical point of view.
 
+- [distributions_variables](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/distributions_variables.png): this contains an example of the distributions of the new variables after applying feature enginnering on them.
+
 ### Final AMS result
 Final results of the analysis are:
 + The best AMS Score of the DNN is 3.529 at a Cut Parameter of 0.83.
