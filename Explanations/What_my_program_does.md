@@ -88,15 +88,15 @@ Have been used 3 DNNs, one for each subset according to the number of jets. Has 
 
 Here are shown the different model accuracy plots for each subset (depending on the number of jets):
 
-Plot for 0 jets classification:
+Plot for 0 jets classification ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_0jets.png)):
 
 ![alt text](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_0jets.png)
 
-Plot for 1 jet classification:
+Plot for 1 jet classification ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_1jet.png)):
 
 ![alt text](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_1jet.png)
 
-Plot for 2 jets classification:
+Plot for 2 jets classification ([Link](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_2jets.png)):
 
 ![alt text](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/accuracy_2jets.png)
 
