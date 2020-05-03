@@ -6,7 +6,7 @@ This folder contains all the informations related to the classes and libraries u
 #### AMS_functions.py ([Link Here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/AMS_functions.py))
 
 This document contains the definition and explanation of the AMS functions.
-AMS metric is used for the evaluation of my model. To see its definition see the [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) document into the [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations) folder.
+AMS metric is used for the evaluation of my model. To see its definition see the [PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) document into the [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations) folder.
 In this document have been defined two functions:
 
 1) `NN_output_to_AMS`: 
