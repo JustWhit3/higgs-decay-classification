@@ -85,8 +85,7 @@ Have been used 3 DNNs, one for each subset according to the number of jets. Has 
 ## Evaluation of the classification
 The combination of the models has been performed using the Logistic Regression on both outpus of DNN and BDT. The class used is `LogisticRegression` from the library `sklearn`.
 Evaluation of the classification process is given by a metric called "AMS" (see the 
-[PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) or the own explanation in the 
-[Reference Guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Reference%20guides)). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
+[PDF_dataset.pdf](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/PDF_dataset.pdf) or the own explanation in the [Readme](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Reference%20guides/README_reference_guides.md) of the [Reference Guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Reference%20guides)). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
 
 ## Results
 For all the final results, see the [project](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Project) folder. Numerical results (AMS scores) are:
