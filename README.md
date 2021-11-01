@@ -7,7 +7,7 @@ view. In this, you will not find explicit references to the code or to the techn
 
 - [How-to guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/How-to%20guides): this folder contains all the guides necessary to execute the program in your device and to reproduce the same simulation in your dataset.
 
-- [Project](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Project): this folder contains the whole code of the project and some graphs and informations related to the representation of the final results. Quick link to the program is [here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/Program.ipynb).
+- [Project](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Project): this folder contains the whole code of the project and some graphs and informations related to the representation of the final results. Quick link to the program is [here](https://github.com/JustWhit3/higgs-decay-classification/blob/master/Project/Analysis.ipynb).
 
 - [Reference Guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Reference%20guides): this folder contains all the reference guides related to understand how work all the functions and classes defined in the project.
 
