@@ -4,7 +4,11 @@ This folder contains all the informations related to the code and the results of
 
 ### List of the documents in the folder
 
-- [Program.ipynb](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/Program.ipynb): this document contains the whole code of the project. You can understand how to execute this on your device, by simply reading the "How-to guides".
+- [Analysis.ipynb](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/Program.ipynb): this document contains the whole code of the project in Jupyter Notebook format. You can understand how to execute this on your device, by simply reading the "How-to guides".
+
+- [Analysis.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/Project/Analysis.py): this document contains the whole code of the project in Python format. You can understand how to execute this on your device, by simply reading the "How-to guides".
+
+- [setup.ls](https://github.com/JustWhit3/higgs-decay-classification/blob/master/Project/setup.ls): this file contains the setup for the .py program. You can understand how to execute this on your device, by simply reading the "How-to guides".
 
 - [s_c_final_AMS.png](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Project/s_c_final_AMS.png): contains the graph of the final AMS, obtained from the combnation of the AMS from the BDT and the DNNs outputs, with a comparison with them.
 
