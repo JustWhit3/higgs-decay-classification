@@ -6,7 +6,7 @@ Than move the dataset into your Home folder, and rename it as: "dataset_higgs_ch
 ### 1) Download the file
 You need to download the file from the repository of GitHub.
 
-Click on the button "Clone or download" and than click on "Download ZIP".
+Click on the button "Clone or download" and than click on "Download ZIP". Alternatively you can download the latest release by clicking on the right release button in the main page.
 ### 2) Extract the program from the download file
 You need a software like "Winrar" to extract the files from the ZIP document.
 
