@@ -27,7 +27,7 @@ Alternatively you can run the .py source code. In this case you have first to se
 ```shell
 source setup.ls
 ```
-and than to run the code:
+and then to run the code:
 ```shell
 python3 Analysis.py
 ```
