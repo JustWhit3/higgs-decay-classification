@@ -1,6 +1,4 @@
 # Useful Informations
- 
-## List of the folders in the repository
 
 Repository diagram structure:
 ```
@@ -36,6 +34,8 @@ higgs-decay-classification/
 │── .gitignore
 │── .gitattributes
 ```
+ 
+## List of the folders in the repository
 
 - [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations): this folder contains all the documents related to the explanations of the analysis from a physical point of
 view. In this, you will not find explicit references to the code or to the technical aspects of the project, but only theoretical explanations. If someone is interested to see right away the complete explanation of the program and the final results, the link is [here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/What_my_program_does.md).
