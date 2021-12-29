@@ -2,6 +2,41 @@
  
 ## List of the folders in the repository
 
+Repository diagram structure:
+```
+higgs-decay-classification/
+├── Explanations/
+│   ├── README.md
+│   ├── PDF_dataset.pdf
+│   ├── What_my_program_does.md
+├── How-to guides/
+│   ├── README.md
+│   ├── How_to_run_the_code.md
+├── Project/
+│   ├── README.md
+│   ├── Analysis.ipynb
+│   ├── Analysis.py
+│   ├── accuracy_0jets.png
+│   ├── accuracy_1jet.png
+│   ├── accuracy_2jet.png
+│   ├── distributions_variables.png
+│   ├── s_c_final_AMS.png
+│   ├── s_c_unweighted.png
+│   ├── s_c_weighted.png
+│   ├── setup.ls
+├── Reference guides/
+│   ├── README.md
+│   ├── AMS_functions.py
+│   ├── Make_model.py
+│   ├── Plot_distributions.py
+│   ├── Splitting_function.py
+│   ├── Splitting_jets_function.py
+│── README.md
+│── LICENSE
+│── .gitignore
+│── .gitattributes
+```
+
 - [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations): this folder contains all the documents related to the explanations of the analysis from a physical point of
 view. In this, you will not find explicit references to the code or to the technical aspects of the project, but only theoretical explanations. If someone is interested to see right away the complete explanation of the program and the final results, the link is [here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/What_my_program_does.md).
 
