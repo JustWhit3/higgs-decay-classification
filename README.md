@@ -1,6 +1,7 @@
 # Useful Informations
 
-Repository diagram structure:
+## Repository diagram structure
+
 ```
 higgs-decay-classification/
 ├── Explanations/
