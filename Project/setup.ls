@@ -1,1 +1,1 @@
-export PYTHONPATH=/home/gianluca/higgs-decay-classification/utils
+export PYTHONPATH=$HOME/higgs-decay-classification/utils
