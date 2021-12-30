@@ -1,4 +1,10 @@
-# Useful Informations
+# higgs-decay-classification
+
+## Introduction
+
+Project for the exam "Tandem Project" at master's degree in nuclear and subnuclear physics at the University of Bologna, as part of the [iTHEPHY association](https://www.unibo.it/en/international/european-projects-of-education-and-training/ithephy-innovative-team-teaching-for-physics).
+
+Study of the Higgs boson Yukawa coupling to tau leptons using the 2012 ATLAS Run-2 dataset. Particular focus is dedicated to the usage of machine learning classification algorithms to classify the Higgs decay channel H to tautau as signal with respect to the other background processes.
 
 ## Repository diagram structure
 
