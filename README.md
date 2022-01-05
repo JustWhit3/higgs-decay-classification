@@ -48,6 +48,7 @@ higgs-decay-classification/
 │   ├── Splitting_jets_function.py
 │── README.md
 │── LICENSE
+│── CITATION.cff
 │── .gitignore
 │── .gitattributes
 ├── setup.ls
