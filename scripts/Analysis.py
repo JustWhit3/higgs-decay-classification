@@ -1,7 +1,7 @@
 
-
-#----------------------------------------  MODULES  ----------------------------------------
-
+#====================================================
+#     MODULES
+#====================================================
 
 #Basic modules:
 import numpy as np
@@ -27,8 +27,9 @@ from Make_model import make_model
 pd.options.display.max_columns = None
 
 
-#----------------------------------------  DATA PREPARATION  ----------------------------------------
-
+#====================================================
+#     DATA PREPARATION
+#====================================================
 
 #Let's have a look at the dataset:
 data_full = pd.read_csv('dataset_higgs_challenge.csv')
@@ -51,8 +52,9 @@ X_test, weights_test, y_test, y_test_BDT = splitting (data_full, "v")
 del(data_full)
 
 
-#----------------------------------------  BDT  ----------------------------------------
-
+#====================================================
+#     BDT
+#====================================================
 
 #Let's first scale my data:
 standard = StandardScaler()
@@ -84,8 +86,9 @@ BDT_2jets_test = y_pred_test[ X_test['PRI_jet_num']>=2 ]
 y_pred_BDT_test = np.concatenate((BDT_0jets_test, BDT_1jet_test, BDT_2jets_test))
 
 
-#----------------------------------------  DATA PROCESSING  ----------------------------------------
-
+#====================================================
+#     DATA PROCESSING
+#====================================================
 
 #Let's construct the data for the case with 0 jets:
 X_0jets, y_train_0jets, empty_0 = splitting_jets(X, y_train, df_empty, 0)
@@ -105,8 +108,9 @@ X_test_2jets, y_test_2jets, weights_2jets_test = splitting_jets(X_test, y_test, 
 del empty_0, empty_1, empty_2
 
 
-#----------------------------------------  2-JETS DNN  ----------------------------------------
-
+#====================================================
+#     2-JETS DNN
+#====================================================
 
 #Scaling data:
 standard_2jets = StandardScaler()
@@ -130,8 +134,9 @@ y_pred_2jets_test = DNN_2jets.predict(X_test_2jets_standard)
 del X_2jets_standard, X_val_2jets_standard, X_2jets, X_val_2jets, X_test_2jets_standard, X_test_2jets
 
 
-#----------------------------------------  1-JET DNN  ----------------------------------------
-
+#====================================================
+#     1-JET DNN
+#====================================================
 
 #Scaling data:
 standard_1jet = StandardScaler()
@@ -155,8 +160,9 @@ y_pred_1jet_test = DNN_1jet.predict(X_test_1jet_standard)
 del X_1jet_standard, X_val_1jet_standard, X_1jet, X_val_1jet,  X_test_1jet_standard, X_test_1jet
 
 
-#----------------------------------------  0-JET DNN  ----------------------------------------
-
+#====================================================
+#     0-JET DNN
+#====================================================
 
 #Scaling data:
 standard_0jets = StandardScaler()
@@ -180,8 +186,9 @@ y_pred_0jets_test = DNN_0jets.predict(X_test_0jets_standard)
 del X_0jets_standard, X_val_0jets_standard, X_0jets, X_val_0jets, X_test_0jets_standard, X_test_0jets
 
 
-#----------------------------------------  TOTAL AMS SCORE OF DNNS  ----------------------------------------
-
+#====================================================
+#     TOTAL AMS SCORE OF DNNs
+#====================================================
 
 #Total AMS score considering all the AMS of each subset:
 y_pred_DNN_val = np.concatenate((y_pred_0jets_val, y_pred_1jet_val, y_pred_2jets_val))
@@ -193,8 +200,9 @@ y_test_total = np.concatenate((y_test_0jets, y_test_1jet, y_test_2jets))
 weights_total_test = np.concatenate((weights_0jets_test, weights_1jet_test, weights_2jets_test))
 
 
-#----------------------------------------  COMBINING DNNs AND BDT AMS  ----------------------------------------
-
+#====================================================
+#     COMBINING DNNs AND BDT AMS
+#====================================================
 
 dataset_blend_val = np.append(y_pred_DNN_val[:,1].reshape(-1,1), y_pred_BDT_val[:,1].reshape(-1,1), axis=1)
 dataset_blend_test = np.append(y_pred_DNN_test[:,1].reshape(-1,1), y_pred_BDT_test[:,1].reshape(-1,1), axis=1)
@@ -204,8 +212,9 @@ blended_val = blend.predict_proba(dataset_blend_val)
 blended_test = blend.predict_proba(dataset_blend_test)
 
 
-#----------------------------------------  FINAL RESULTS  ----------------------------------------
-
+#====================================================
+#     FINAL RESULTS
+#====================================================
 
 print('DNN:')
 plot_AMS(y_pred_DNN_test, y_test_total, weights_total_test)
