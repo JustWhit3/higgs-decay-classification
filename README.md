@@ -69,11 +69,11 @@ Final results:
 
 Unweighted distribution for signal-background discrimination for validation set:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_unweighted.png)
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
 
 Weighted distribution for signal-background discrimination for validation set:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_weighted.png)
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
 
 ## Unofficial paper
 
