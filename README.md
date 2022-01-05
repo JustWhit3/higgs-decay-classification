@@ -1,20 +1,29 @@
-# Useful Informations
+# higgs-decay-classification
+
+## Table of contents
+
+- [Introduction](#introduction)
+- [Repository diagram structure](#repository-diagram-structure)
+- [Documentation](#documentation)
+- [Results](#results)
+
+## Introduction
+
+Study of the Higgs boson Yukawa coupling to tau leptons using the 2012 ATLAS Run-2 dataset. Particular focus is dedicated to the usage of machine learning classification algorithms to classify the Higgs decay channel H to tautau as signal with respect to the other background processes.
+
+For the classification have been considered the cases in which there are 0,1 or 2 jets in the final state.
+
+This classification has been performed on the free dataset from the [Higgs Boson Challenge](https://www.kaggle.com/c/higgs-boson/overview) ([dataset](http://opendata.cern.ch/record/328)), that contains data related to the case in which we have in the final state a tau that decays hadronically and the other one that decays leptonically (data for same leptonic or hadronic decays of the tau are omitted).
 
 ## Repository diagram structure
 
 ```
 higgs-decay-classification/
-├── Explanations/
-│   ├── README.md
+├── doc/
 │   ├── PDF_dataset.pdf
-│   ├── What_my_program_does.md
-├── How-to guides/
-│   ├── README.md
-│   ├── How_to_run_the_code.md
-├── Project/
-│   ├── README.md
-│   ├── Analysis.ipynb
-│   ├── Analysis.py
+│   ├── background_explanation.md
+│   ├── run_the_code.md
+├── img/
 │   ├── accuracy_0jets.png
 │   ├── accuracy_1jet.png
 │   ├── accuracy_2jet.png
@@ -22,9 +31,10 @@ higgs-decay-classification/
 │   ├── s_c_final_AMS.png
 │   ├── s_c_unweighted.png
 │   ├── s_c_weighted.png
-│   ├── setup.ls
-├── Reference guides/
-│   ├── README.md
+├── scripts/
+│   ├── Analysis.ipynb
+│   ├── Analysis.py
+├── utils/
 │   ├── AMS_functions.py
 │   ├── Make_model.py
 │   ├── Plot_distributions.py
@@ -34,24 +44,26 @@ higgs-decay-classification/
 │── LICENSE
 │── .gitignore
 │── .gitattributes
+├── setup.ls
 ```
  
-## List of the folders in the repository
+## Documentation
 
-- [Explanations](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Explanations): this folder contains all the documents related to the explanations of the analysis from a physical point of
-view. In this, you will not find explicit references to the code or to the technical aspects of the project, but only theoretical explanations. If someone is interested to see right away the complete explanation of the program and the final results, the link is [here](https://github.com/JustWhit3/Software_and_Computing_program/blob/master/Explanations/What_my_program_does.md).
+List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc) folder:
 
-- [How-to guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/How-to%20guides): this folder contains all the guides necessary to execute the program in your device and to reproduce the same simulation in your dataset.
+- [Background explanation](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/background_explanation.md): contains a detailed background explanation of the analysis.
+- [How to run the code](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/run_the_code.md): contains information about how to run the code on your device.
+- [Utils explanation](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/utils.md): contains information about the functions defined for the main program.
+- [Pdf of the challenge](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/dataset.pdf): it is a pdf containing information about the dataset and the challenge.
 
-- [Project](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Project): this folder contains the whole code of the project and some graphs and informations related to the representation of the final results. Quick link to the program is [here](https://github.com/JustWhit3/higgs-decay-classification/blob/master/Project/Analysis.ipynb).
+## Results
 
-- [Reference Guides](https://github.com/JustWhit3/Software_and_Computing_program/tree/master/Reference%20guides): this folder contains all the reference guides related to understand how work all the functions and classes defined in the project.
+Final results plots:
 
-NOTE: for each folder there is a proper README.md file that explains in detail what are the documents inside it and what they do.
+Unweighted distribution for signal-background discrimination for validation set:
 
-## Useful links for the documentation:
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_unweighted.png)
 
-+ Official pdf for the analysis: http://opendata.cern.ch/record/329.
-+ ATLAS open data: http://opendata.cern.ch/record/328.
-+ Higgs Boson Challenge Kaggle site: https://www.kaggle.com/c/higgs-boson/overview.
-+ Jupyter Notebook site: https://jupyter.org/install.
+Weighted distribution for signal-background discrimination for validation set:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_weighted.png)
