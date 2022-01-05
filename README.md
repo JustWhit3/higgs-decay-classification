@@ -25,6 +25,7 @@ higgs-decay-classification/
 │   ├── PDF_dataset.pdf
 │   ├── background_explanation.md
 │   ├── run_the_code.md
+│   ├── utils.md
 ├── img/
 │   ├── accuracy_0jets.png
 │   ├── accuracy_1jet.png
