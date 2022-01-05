@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Repository diagram structure](#repository-diagram-structure)
 - [Documentation](#documentation)
-- [Results](#results)
 - [Unofficial paper](#unofficial-paper)
 
 ## Introduction
@@ -62,18 +61,6 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 - [How to run the code](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/run_the_code.md): contains information about how to run the code on your device.
 - [Utils explanation](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/utils.md): contains information about the functions defined for the main program.
 - [Pdf of the challenge](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/dataset.pdf): it is a pdf containing information about the dataset and the challenge.
-
-## Results
-
-Final results:
-
-Unweighted distribution for signal-background discrimination for validation set:
-
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
-
-Weighted distribution for signal-background discrimination for validation set:
-
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
 
 ## Unofficial paper
 
