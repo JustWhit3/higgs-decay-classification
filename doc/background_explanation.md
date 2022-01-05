@@ -9,8 +9,8 @@
 - [BDT Model](#bdt-model)
 - [Neural Network Structure](#neural-network-structure)
 - [Evaluation of the classification](#evaluation-of-the-classification)
+- [Preliminar results](#preliminar-results)
 - [Results](#results)
-
 
 ## Dataset
 
@@ -35,6 +35,8 @@ Informations about the variables:
 Signal and Background events are labelled and weighted.
 
 ## Analysis strategy
+
+For the analysis, the [analysis.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python/analysis.py) script is used.
 
 To split the Dataset, according to the number of jets, into subsets (useful only for DNNs):
 
@@ -121,9 +123,9 @@ The combination of the models has been performed using the Logistic Regression o
 
 Evaluation of the classification process is given by a metric called "AMS" (see the [PDF_dataset.pdf](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/PDF_dataset.pdf)). At the end have been combined all the AMS of each classification procedure with the Logistic Regression method.
 
-## Results
+## Preliminar results
 
-In this section are presented all the final results. Numerical results (AMS scores) are:
+In this section are presented all the preliminar final results. Numerical results (AMS scores) are:
 
 - Best AMS Score of the DNN: 3.529 at a Cut Parameter of 0.83.
 - Best AMS Score of the BDT: 3.578 at a Cut Parameter of 0.83.
@@ -144,3 +146,15 @@ Graphical results are shown here:
 ![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_weighted.png)
 
 NOTE: in this latter case, it's possible to see a strange result for the last bin. I've investigated this from my own and I've interpreted it as caused by a bit of overtraning in the last part of the graph.
+
+## Results
+
+Fila results plots are obtained with the [plots.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python/plot.py) script and are shown below:
+
+Weighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.pdf)
+
+Unweighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.pdf)

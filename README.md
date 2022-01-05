@@ -6,6 +6,7 @@
 - [Repository diagram structure](#repository-diagram-structure)
 - [Documentation](#documentation)
 - [Results](#results)
+- [Unofficial paper](#unofficial-paper)
 
 ## Introduction
 
@@ -14,6 +15,8 @@ Study of the Higgs boson Yukawa coupling to tau leptons using the 2012 ATLAS Run
 For the classification have been considered the cases in which there are 0,1 or 2 jets in the final state.
 
 This classification has been performed on the free dataset from the [Higgs Boson Challenge](https://www.kaggle.com/c/higgs-boson/overview) ([dataset](http://opendata.cern.ch/record/328)), that contains data related to the case in which we have in the final state a tau that decays hadronically and the other one that decays leptonically (data for same leptonic or hadronic decays of the tau are omitted).
+
+Analysis scripts are located into the [python](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python) folder, while Jupyter Notebooks examples are located into the [jupyter](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/jupyter) folder. The purpose of this latter is to show interactively the various analysis passages.
 
 ## Repository diagram structure
 
@@ -32,8 +35,12 @@ higgs-decay-classification/
 │   ├── s_c_unweighted.png
 │   ├── s_c_weighted.png
 ├── scripts/
-│   ├── Analysis.ipynb
-│   ├── Analysis.py
+│   ├── jupyter/
+│   │   ├── analysis.ipynb
+│   │   ├── plots.ipynb
+│   ├── python/
+│   │   ├── analysis.py
+│   │   ├── plots.py
 ├── utils/
 │   ├── AMS_functions.py
 │   ├── Make_model.py
@@ -58,7 +65,7 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 
 ## Results
 
-Final results plots:
+Final results:
 
 Unweighted distribution for signal-background discrimination for validation set:
 
@@ -67,3 +74,9 @@ Unweighted distribution for signal-background discrimination for validation set:
 Weighted distribution for signal-background discrimination for validation set:
 
 ![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/s_c_weighted.png)
+
+## Unofficial paper
+
+An unofficial paper has been produced within this analysis. It has been presented at the [2020 ISHEP](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2020/453478) school through a small presentation.
+
+This paper can be accessed [here](https://www.researchgate.net/publication/344397759_Tandem_Project_Report_Classification_in_particle_physics_using_machine_learning).

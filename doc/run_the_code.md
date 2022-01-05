@@ -4,7 +4,6 @@
 
 - [Download the dataset](#download-the-dataset)
 - [Download the file](#download-the-file)
-- [Extract the program from the download file](#extract-the-program-from-the-download-file)
 - [Run the code on your computer](#run-the-code-on-your-computer)
 
 ## Download the dataset
@@ -19,32 +18,24 @@ You need to download the file from the repository of GitHub.
 
 Click on the button "Clone or download" and than click on "Download ZIP". Alternatively you can download the latest release by clicking on the right release button in the main page.
 
-## Extract the program from the download file
-
 You need a software like "Winrar" to extract the files from the ZIP document.
-
-Once you've done this, you need to search for the file "Program.ipynb", into the "Project" folder.
 
 ## Run the code on your computer
 
-To run the code you need first to download the Jupyter Notebook from [here](https://jupyter.org/install). You can use Conda or Pip.
-
-Than you've to tip this command on the bash:
-
-```shell
-jupyter-notebook
-```
-
-Once the page of Jupyter has been opened, you can select the "Program.ipynb" and click with the left botton on it.
-
-Alternatively you can run the .py source code. In this case you have first to setup the Python environment path from the main repository directory:
+You have first to setup the Python environment path from the main repository directory:
 
 ```shell
 source setup.ls
 ```
 
-and then to run the code:
+and then to run the analysis code:
 
 ```shell
-python3 Analysis.py
+python3 scripts/python/analysis.py
+```
+
+With the produced output you can finally run the plots code:
+
+```shell
+python3 scripts/python/plots.py
 ```
