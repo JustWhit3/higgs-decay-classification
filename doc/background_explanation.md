@@ -151,10 +151,6 @@ NOTE: in this latter case, it's possible to see a strange result for the last bi
 
 Final results plots are obtained with the [plots.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python/plot.py) and shown below:
 
-Weighted distribution:
-
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
-
-Unweighted distribution:
+Final weighted distribution:
 
 ![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
