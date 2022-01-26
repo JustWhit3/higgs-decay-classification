@@ -73,9 +73,17 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 
 ## Final results:
 
+<<<<<<< HEAD
 Final weighted distribution:
+=======
+Weighted distribution:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png" height=400>
+
+Unweighted distribution:
+>>>>>>> 96f0be1a03899b2f19edf42426f170291f63e5b7
+
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png" height=400>
 
 ## Unofficial paper
 
