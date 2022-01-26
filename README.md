@@ -71,6 +71,16 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 - [Utils explanation](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/utils.md): contains information about the functions defined for the main program.
 - [Pdf of the challenge](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/dataset.pdf): it is a pdf containing information about the dataset and the challenge.
 
+## Final results:
+
+Weighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
+
+Unweighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
+
 ## Unofficial paper
 
 An unofficial paper has been produced within this analysis. It has been presented at the [2020 ISHEP](https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2020/453478) school through a small presentation.

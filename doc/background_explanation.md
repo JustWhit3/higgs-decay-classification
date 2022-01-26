@@ -149,7 +149,12 @@ NOTE: in this latter case, it's possible to see a strange result for the last bi
 
 ## Results
 
-Final results plots are obtained with the [plots.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python/plot.py) script and can be accessed in the following links:
+Final results plots are obtained with the [plots.py](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python/plot.py) and shown below:
 
-- [Weighted distribution](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.pdf).
-- [Unweighted distribution](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.pdf).
+Weighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
+
+Unweighted distribution:
+
+![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
