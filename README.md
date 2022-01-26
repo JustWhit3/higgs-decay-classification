@@ -27,6 +27,10 @@ This classification has been performed on the free dataset from the [Higgs Boson
 
 Analysis scripts are located into the [python](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/python) folder, while Jupyter Notebooks examples are located into the [jupyter](https://github.com/JustWhit3/higgs-decay-classification/blob/master/scripts/jupyter) folder. The purpose of this latter is to show interactively the various analysis passages.
 
+The software is and will stay **free**, but if you want to support me with a donation it would be really appreciated!
+
+<a href="https://www.buymeacoffee.com/JustWhit33" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
 ## Repository diagram structure
 
 ```
