@@ -153,8 +153,10 @@ Final results plots are obtained with the [plots.py](https://github.com/JustWhit
 
 Weighted distribution:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
+Weighted distribution:
+
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png" height=400>
 
 Unweighted distribution:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png" height=400>
