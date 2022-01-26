@@ -75,11 +75,11 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 
 Weighted distribution:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png)
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/weighted.png" height=400>
 
 Unweighted distribution:
 
-![alt text](https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png)
+<img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/unweighted.png" height=400>
 
 ## Unofficial paper
 
