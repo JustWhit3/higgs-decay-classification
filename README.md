@@ -41,13 +41,6 @@ higgs-decay-classification/
 │   ├── run_the_code.md
 │   ├── utils.md
 ├── img/
-│   ├── accuracy_0jets.png
-│   ├── accuracy_1jet.png
-│   ├── accuracy_2jet.png
-│   ├── distributions_variables.png
-│   ├── s_c_final_AMS.png
-│   ├── s_c_unweighted.png
-│   ├── s_c_weighted.png
 ├── scripts/
 │   ├── jupyter/
 │   │   ├── analysis.ipynb
