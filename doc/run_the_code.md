@@ -22,13 +22,7 @@ You need a software like "Winrar" to extract the files from the ZIP document.
 
 ## Run the code on your computer
 
-You have first to setup the Python environment path from the main repository directory:
-
-```shell
-source setup.ls
-```
-
-and then to run the analysis code:
+You have first to to run the analysis code:
 
 ```shell
 python3 scripts/python/analysis.py

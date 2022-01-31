@@ -59,7 +59,6 @@ higgs-decay-classification/
 │── CITATION.cff
 │── .gitignore
 │── .gitattributes
-├── setup.ls
 ```
  
 ## Documentation
