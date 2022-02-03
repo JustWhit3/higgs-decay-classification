@@ -41,6 +41,7 @@ higgs-decay-classification/
 │   ├── run_the_code.md
 │   ├── utils.md
 │   ├── CREDITS.md
+│   ├── CONTRIBUTING.md
 ├── img/
 ├── scripts/
 │   ├── jupyter/
@@ -70,6 +71,7 @@ List of documentation from the [doc](https://github.com/JustWhit3/higgs-decay-cl
 - [How to run the code](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/run_the_code.md): contains information about how to run the code on your device.
 - [Utils explanation](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/utils.md): contains information about the functions defined for the main program.
 - [Pdf of the challenge](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/dataset.pdf): it is a pdf containing information about the dataset and the challenge.
+- [Contributing](https://github.com/JustWhit3/higgs-decay-classification/blob/master/doc/CONTRIBUTING.md): contains information about how to contribute to this project.
 
 ## Final results:
 
