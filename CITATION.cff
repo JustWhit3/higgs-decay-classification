@@ -6,7 +6,7 @@ authors:
 - family-names: "Florian"
   given-names: "Mausolf"
 title: "higgs-decay-classification"
-version: 2.0.0
+version: 2.0.1
 doi: https://zenodo.org/badge/latestdoi/248788639
 date-released: 2022-01-05
 url: "https://github.com/JustWhit3/higgs-decay-classification"
