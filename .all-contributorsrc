@@ -1,5 +1,7 @@
 {
-  "files": ["doc/CREDITS.md"],
+  "files": [
+    "doc/CREDITS.md"
+  ],
   "imageSize": 100,
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": false,
@@ -12,6 +14,20 @@
       "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
     }
   },
-  "skipCi": "true",
-  "contributors": []
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "mlliarm",
+      "name": "Mi. Lia.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5833270?v=4",
+      "profile": "https://mlliarm.github.io/",
+      "contributions": [
+        "review"
+      ]
+    }
+  ],
+  "projectName": "higgs-decay-classification",
+  "projectOwner": "JustWhit3",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
