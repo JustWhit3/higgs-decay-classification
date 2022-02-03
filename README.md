@@ -40,6 +40,7 @@ higgs-decay-classification/
 │   ├── background_explanation.md
 │   ├── run_the_code.md
 │   ├── utils.md
+│   ├── CREDITS.md
 ├── img/
 ├── scripts/
 │   ├── jupyter/
