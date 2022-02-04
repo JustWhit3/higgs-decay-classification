@@ -24,6 +24,15 @@
       "contributions": [
         "projectManagement"
       ]
+    },
+    {
+      "login": "mlliarm",
+      "name": "Mi. Lia.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5833270?v=4",
+      "profile": "https://mlliarm.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "projectName": "higgs-decay-classification",
