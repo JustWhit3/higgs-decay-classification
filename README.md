@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/JustWhit3/higgs-decay-classification/blob/master/img/logo.svg" height=220></p>
 
-<h3 align="center">Classification of Higgs boson decays using machine learning</h3>
+<h3 align="center">Classification of Higgs boson decays using machine learning. Project for the "Tandem Project" activity at Master degree in Physics.</h3>
 <p align="center">
     <img title="v2.0" alt="v2.0" src="https://img.shields.io/badge/version-v2.0-informational?style=flat-square"
     <a href="LICENSE">
